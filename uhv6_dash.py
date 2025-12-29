@@ -513,9 +513,9 @@ PERF_ORDER_STATE = [
 
 with tab5:
     st.subheader("State-Level Hospital Performance vs National Benchmark")
-    st.caption(
-        "CMS-reported counts of hospitals by performance category, shown using the original CMS methodology."
-    )
+    # st.caption(
+       # "CMS-reported counts of hospitals by performance category, shown using the original CMS methodology."
+    # )
 
     if selected_group not in STATE_BENCHMARK_CONFIG:
         st.info("State-level benchmark is not available for this measure group.")

@@ -113,9 +113,9 @@ PERF_ORDER = [
 # =============================
 # LOAD DATA
 # =============================
-data_path = "Unplaned_Hospital_Visits/Unplanned_Hospital_Visits-Hospital.csv"
+data_path = "Unplanned_Hospital_Visits-Hospital.csv"
 df_raw = load_data(data_path)
-state_data_path = "Unplaned_Hospital_Visits/Unplanned_Hospital_Visits-State.csv"
+state_data_path = "Unplanned_Hospital_Visits-State.csv"
 df_state = load_state_level_data(state_data_path)
 
 # perf_color_map = {

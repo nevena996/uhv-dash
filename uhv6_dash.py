@@ -327,7 +327,7 @@ with tab2:
         st.subheader("High-Volume Contributors")
         top_vol = df_scatter.sort_values("Number of Patients", ascending=False).head(15)
         st.dataframe(
-            top_vol[["Facility Name", "State", "Number of Patients", "Score"]],
+            top_vol[["Facility Name", "State", "Measure ID", "Measure Name", "Number of Patients", "Score", "Compared to National"]],
             hide_index=True,
         )
 

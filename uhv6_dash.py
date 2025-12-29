@@ -321,6 +321,13 @@ with tab2:
             template="plotly_dark",
             size_max=40,
             color_discrete_map=perf_color_map,
+            hover_data={
+                "State": True,
+                "Measure Name": True,        
+                "Number of Patients": True,
+                "Score": ":.2f",
+                "bubble_size": False
+            },
         )
         st.plotly_chart(fig_scatter, use_container_width=True)
 
